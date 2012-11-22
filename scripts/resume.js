@@ -3,7 +3,7 @@
 	var shippedProducts = [
 		{ id : "Analyics", 
 			title: "Social Analytics",
-			roles : ["Product Management", "Programming", "Design"],
+			roles : ["Product Management", "Programming"],
 			images: ["images/analytics.png"],
 			thumb: "images/analytics-thumb.png",
 			description : ''.concat("Engineered and programmed the Analytics solution for the Social Desktop application.</br>", "\n", "\n",
@@ -13,7 +13,7 @@
 		},
 		{ id : "Agent", 
 			title: "Social Desktop",
-			roles : ["Product Management", "Programming", "Design"],
+			roles : ["Product Management", "Programming"],
 			images: ["images/social desktop.png"],
 			thumb: "images/social desktop-thumb.png",
 			description : ''.concat("Engineered and programmed a next generation communications tool for SMB.\n", "</br>",
@@ -346,12 +346,27 @@
 
 	$(document).ready(function() {
 		loadShippedProducts();
-		var createCharts = function() {
+		var createLayout = function() {
+			var width = $(window).width();
+			if (width < 1260) {
+				$("p.name").css("font-size", "2em");
+				$("p.degree em").css("font-size", "1.2em");
+			}
+			else {
+				$("p.name").css("font-size", "2.5em");
+				$("p.degree em").css("font-size", "1.5em");
+			}
+			if (width < 760) {
+				$("#banner-text").hide();
+			}
+			else {
+				$("#banner-text").show();
+			}
 			createSkillsChart();
 			createSEChart();
 			createTeamChart();
 		};
-		createCharts();
+		createLayout();
 		$("#navProducts").click(function() {
 				$('html, body').animate({
 										scrollTop: $("#shippedSection").offset().top
@@ -373,22 +388,7 @@
 		//in order to avoid media-queries in javascript, old style resizing handler
 		//gets triggered every time not only on match should be done by hand
 		$(window).resize(function() {
-			createCharts();
-			var width = $(window).width();
-			if (width < 1260) {
-				$("p.name").css("font-size", "2em");
-				$("p.degree em").css("font-size", "1.2em");
-			}
-			else {
-				$("p.name").css("font-size", "2.5em");
-				$("p.degree em").css("font-size", "1.5em");
-			}
-			if (width < 760) {
-				$("#banner-text").hide();
-			}
-			else {
-				$("#banner-text").show();
-			}
+			createLayout();
 		});
 	});
 		
