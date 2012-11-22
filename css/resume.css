@@ -90,14 +90,28 @@ div.section-row h2 {
 	float:left;
 }
 
+#footer p {
+	display: inline;
+	float: left;
+	padding-top: 12px;
+	padding-left: 12px;
+	color: #fff;
+}
+
 div.section-row span {
 	display: inline;
 	float: right;
 	padding-top: 12px;
+	padding-right: 12px;
 }
 
 div.section-row span em{
 	color:#fff
+}
+
+div.section-row span em a{
+	color:#fff;
+	text-decoration:underline;
 }
 
 hr.section-separator {

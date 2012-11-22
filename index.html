@@ -13,6 +13,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 	
 	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-34463415-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+
+	<script type="text/javascript">
 		var browser			= navigator.userAgent;
 		var browserRegex	= /(Android|BlackBerry|IEMobile|Nokia|iP(ad|hone|od)|Opera M(obi|ini))/;
 		var isMobile		= false;
@@ -142,6 +156,12 @@
 		<h4>People I've worked with</h4>
 		<p>With a <a href='http://nobullshit.com.uy/'>great team</a> you will walk paths you would never thought you'll reach on your own.</p>
 		<div id="team_chart"></div>
+	</div>
+</div>
+<div class="row section-row" id="footer">
+	<div class="grid_12">
+		<p>2012 © Copyright Guillermo Winkler</p>
+		<span><em>The code of this site is <a href='https://github.com/guilespi/resume-of-sorts'>published in github</a>, fork it!</em></span>
 	</div>
 </div>
 
