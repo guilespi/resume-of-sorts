@@ -337,13 +337,15 @@
                     for (var i = 0; i < products.length; i++) {
                         $("#product_" + products[i]).addClass("selectedProduct");
                     }
-                    $('html, body').animate({
-                            scrollTop: $("#shippedSection").offset().top
-                    }, 300);
                     if (lastSelection) {
                         lastSelection.remove();
                     }
                     lastSelection = polygon.glow();
+                    setTimeout(function() {
+                      $('html, body').animate({
+                              scrollTop: $("#shippedSection").offset().top
+                      }, 200);
+                    }, 200);
                 }
             },
             categorySize : 0.30,
