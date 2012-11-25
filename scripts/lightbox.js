@@ -203,6 +203,15 @@ lightbox = new Lightbox options
         $image.attr('src', _this.album[imageNumber].link);
         $image.width = preloader.width;
         $image.height = preloader.height;
+        /*set max width to 800*/
+        if ($image.width > 800) {
+            var scale = $image.width / 800;
+            $image.css("width", 800);
+            preloader.width = 800;
+            preloader.height = preloader.height / scale;
+            $image.css("height", preloader.height);
+        }
+        /*end set max width to 800*/
         return _this.sizeContainer(preloader.width, preloader.height);
       };
       preloader.src = this.album[imageNumber].link;

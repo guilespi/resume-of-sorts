@@ -28,7 +28,7 @@
         { id : "Tweety", 
             title: "Tweety",
             roles : ["Product Management"],
-            images: ["images/tweety.png"],
+            images: ["images/tweety_design.png"],
             thumb: "images/tweety-thumb.png",
             description : ''.concat("Tweety is a web based programming tool, like Balsamiq Mockups, only that it's not a mockup.\n", "</br>",
                                     "What's great about Tweety is that is as easy as balsamiq for newcomers,",
