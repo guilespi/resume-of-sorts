@@ -74,7 +74,7 @@
             skills: ["c++", "reverse engineering", "tcp/ip", "assembler", "IDA Pro", "WinDbg"]
         },
         { id : "IVRDesigner", 
-            title: "IVR Designer Tool",
+            title: "IVR Flow Designer Tool",
             roles : ["Product Management", "Programming", "Design"],
             images: ["images/ivrdesigner.png"],
             thumb: "images/ivrdesigner-thumb.png",
