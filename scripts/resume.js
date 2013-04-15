@@ -5,6 +5,29 @@
 
 (function () {
     var shippedProducts = [
+        { id : "Notify-Me",
+          title: "Notify Me",
+          roles: ["Product Management", "Programming"],
+          images: ["images/notify_me.png"],
+          thumb: "images/notify_me-thumb.png",
+          description: ''.concat("Engineered and programmed a voice and sms blaster solution",
+                                 " for the Uruguayan Government.", "</br></br>", 
+                                 "What for? Fast and automatic dispatch of emergency messages.",
+                                 "</br></br>", "Best of all? "
+                                 , "100% in Clojure and <a href='http://www.github.com/guilespi/notify-me'>open sourced</a>."),
+          skills: ["clojure", "clojurescript", "postgres", "git", "quartz"]
+        },
+        { id: "Mobile-Banking",
+          title: "Mobile Banking",
+          roles: ["Design", "Programming"],
+          images: ["images/mobile_banking.png"],
+          thumb: "images/mobile_banking-thumb.png",
+          description: ''.concat("Engineered and programmed a prototype for a customizable mobile banking solution.", "</br></br>",
+                                 "The goal of the solution was to be able to modify the application without having ",
+                                 "to recompile or change de Obj-C source code.</br></br>",
+                                 "Defined a banking DSL and built the dynamically customizable App"),
+          skills: ["objective-c", "clojure", "javascript"]
+        },
         { id : "Analyics", 
             title: "Social Analytics",
             roles : ["Product Management", "Programming"],
@@ -99,8 +122,9 @@
                 "lua" : 8,
                 "javascript" : 8,
                 "python": 5,
-                "clojure":4,
+                "clojure":7,
                 "c": 9,
+                "objective-c": 7
             },
             "DB/Search" : {
                 "SQL Server": 8,
@@ -215,7 +239,7 @@
                                         '</blockquote>',
                                 '</div>'));
                 if (offset > 0) {
-                    $funFact.addClass('offset_' + 6);
+                    $funFact.addClass('offset_' + 3);
                 }
                 $currentRow.append($funFact);
             }

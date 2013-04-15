@@ -78,6 +78,11 @@ div.contact-info ul li img {
 	height: 32px;
 }
 
+#github_icon {
+	width: 36px;
+	height: 36px;
+}
+
 /* Section separators */
 
 div.section-row {
